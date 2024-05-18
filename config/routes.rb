@@ -2,11 +2,11 @@ Rails.application.routes.draw do
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Defines the root path route ("/")
-  # get("/", { :controller => "articles", :action => "index" })
+  get("/", { :controller => "places", :action => "index" })
 
-
-  resources "entries"
   resources "places"
+  resources "entries"
+
   # get("/sessions", {:controller => "sessions", :action => "index"})
   # get("/sessions/:id", {:controller => "sessions", :action => "show"})
   # get("/sessions/new", {:controller => "sessions", :action => "new"})
